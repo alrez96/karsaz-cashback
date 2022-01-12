@@ -6,6 +6,7 @@ function karsazcashback_main_page()
     <div class="wrap">
         <h1><?php echo KARSAZCASHBACK_LANGUAGES['admin_main_page_title']; ?></h1>
         <form method="post" action="" novalidate="novalidate">
+            <?php wp_nonce_field('karsazcashback_academy_token_submit_action', 'karsazcashback_academy_token_submit_nonce'); ?>
             <table class="form-table" role="presentation">
                 <tbody>
                     <tr>
